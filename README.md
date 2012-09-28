@@ -13,8 +13,8 @@ rails_log_watcher
 ## Usage
 
     #enviroment.rb
-    gem "log4r"
-    gem "rails_log_watcher"
+    config.gem "log4r"
+    config.gem "rails_log_watcher"
 
     #config/development.rb or production.rb
     config.logger = RailsLogWatcher.new(config.log_path)
