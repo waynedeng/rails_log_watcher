@@ -10,13 +10,10 @@ rails_log_watcher
     $ sudo gem install log4r
     $ sudo gem install rails_log_watcher
   
-## Usage
+## Usage    
 
-    #enviroment.rb
-    config.gem "log4r"
-    config.gem "rails_log_watcher"
-
-    #config/development.rb or production.rb
+    #config/environments/development.rb or production.rb
+    require "rails_log_watcher"
     config.logger = RailsLogWatcher.new(config.log_path)
     config.logger.warn_request_secs = 5
     config.logger.warn_secs = 2
